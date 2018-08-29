@@ -31,27 +31,17 @@
         </header>
     
         <!-- HERO -->
-        <div id="pre-hero-1">
-            <div class="pre-hero-container">
-                <h1 class="big-title">Programmer & Designer</h1>
-                <br>
-                <p>Hi I'm Christopher Fregly. I am currently a computer science student at Rice University who also has a love for design.</p>
-                <br>
-                <p>This is a portfolio site for all of my <a href="https://www.cfregly.com/programming"><button class="button"><span>coding</span></button></a> and <a href="https://www.cfregly.com/design"><button class="button"><span>design</span></button></a> work. Click the emphasized words for a few of my projects.</p>
-            </div>
-        
+        <div id="pre-hero-2">
+            <h1>Part of Speech Tagger</h1>
+            <br>
+            <p>This application makes use of Hidden Markov Models (HMM) to predict the part of speech (POS) tags for  words in a sentence. In order to use this method, a large amount of already tagged data was aquired to train the model. The data was of high quality, for example sentences where the words were used in many different ways and contexts. In order to accomadate these needs, the model used in this app was trained from 3 megabits of text made up of tagged data from Wikipedia pages. While by no means can this model predict the correct tags 100% of the time it is still quite accurate.</p>
+            <br>
+            <p>Upon entering a sentence to be tagged, a Viterbi dynamic programming algorithm is used on the HMM and input sentence to obtain the POS tags. The Viterbi algorithm finds the most likely sequence of hidden states given a sequence of observable events. In this case the hidden states are the word tags and the observable events are the words themselves. </p>
+            <br>
+            <p>This project was created in python and ported to the web using Flask. You can view the web app <a class="newbtn" href="https://freglypos.herokuapp.com/" target="_blank">here</a>.</p>
         </div>
         
-        <!-- Designer/Programmer Buttons
-        <div id="posButton">
-            <button class="button1"><span>Designer </span></button>
-            <button class="button2"><span>Programmer </span></button>
-
-        </div>
-         -->
-        
-        
-        
+        <a href="https://www.cfregly.com/programming"><p class="newbtn" style="text-align: center;"><span class="glyphicon glyphicon-circle-arrow-left"></span> back</p></a>
         
         <script src="scripts/jquery-2.1.4.min.js"></script>
         <script src="scripts/jquery.fitvids.js"></script>
