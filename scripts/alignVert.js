@@ -2,6 +2,6 @@
  * Vertically aligns the information in the page.
  */
 function alignVert() {
-    var lineHeight = window.innerHeight + "px";
-    document.getElementById("line-height").style.lineHeight = lineHeight;
+    var lineHeight = window.innerHeight;
+    document.getElementById("line-height").style.lineHeight = (lineHeight - 45) + "px";
 }
