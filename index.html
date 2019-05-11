@@ -12,9 +12,13 @@
         <link rel="icon" href="/img/favicon.ico?" type="image/x-icon">
         
         <!-- Custom CSS -->        
-        <link rel="stylesheet" href="style.css">              
+        <link rel="stylesheet" href="style.css">   
+        
+        <!-- Vertically centers the page. -->
+        <script src = "scripts/alignVert.js"></script>
+        <script src = "scripts/resize.js"></script>
     </head>
-    <body class="fadein">
+    <body class="fadein" onload = "alignVert(), resize()" onresize = "alignVert()">
         <div class = "page" id = "line-height">
             <div class = "span">
                 <h1 class = "gilroy-bold, name" >CHRIS FREGLY</h1>
@@ -28,9 +32,5 @@
                 </div>
             </div>
         </div>
-        <!-- Vertically centers the page. -->
-        <script>
-            document.getElementById("line-height").style.lineHeight = window.innerHeight + "px";
-        </script>
     </body>
 </html>
